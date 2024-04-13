@@ -4,17 +4,22 @@ import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Pages/Home.jsx";
+import RecipeDetails from "./Pages/RecipeDetails.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    children:[
+    children: [
       {
-        path:"/",
-        element:<Home/>
-      }
-    ]
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/recipe-details/:id",
+        element: <RecipeDetails />,
+      },
+    ],
   },
 ]);
 
