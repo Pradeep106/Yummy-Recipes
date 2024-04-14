@@ -3,7 +3,7 @@ import { CgMenuLeft } from "react-icons/cg";
 
 const Header = () => {
   return (
-    <header className="text-lg font-semibold">
+    <header className="text-lg">
       <nav>
         <ul className="flex justify-between">
           <Link>
