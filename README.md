@@ -1,8 +1,11 @@
-# React + Vite
+# WELCOME
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## YUMMY RECIPES
 
-Currently, two official plugins are available:
+- Setup in local environmet
+- `cd client`
+- `npm i`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Create `.env` file in root
+- Add your `apiKey=YOUR_API_KEY`
+- Get your api key after sigunig up from `https://spoonacular.com/food-api`
