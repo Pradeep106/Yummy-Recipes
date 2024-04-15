@@ -42,7 +42,7 @@ const Header = () => {
             </li>
             <li
               className="mini:border-b hidden mini:inline-block text-red-500 mini:pb-2 min:px-10"
-              onClick={() => toggleMenu(!setShowMenu)}>
+              onClick={() => toggleMenu(setShowMenu)}>
               Close
             </li>
           </ul>
