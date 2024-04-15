@@ -4,7 +4,7 @@ import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
 
 const Header = () => {
-  const [showMenu, setShowMenu] = useState(true);
+  const [showMenu, setShowMenu] = useState(false);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
@@ -26,7 +26,7 @@ const Header = () => {
             onClick={toggleMenu}
           />
         </div>
-        <div className={` mini:${showMenu ? "hidden" : ""} z-10`}>
+        <div className={` mini:${showMenu ? "" : "hidden"} z-10`}>
           <ul className="flex  items-center mini:flex-col mini:absolute mini:border bg-white mini:transition-all mini:duration-200 mini:ease-in-out rounded-lg right-10 mini:gap-2 gap-10">
             <li className="mini:border-b mini:px-10 mini:py-2">
               <Link to="/">Home</Link>
