@@ -19,14 +19,14 @@ const Header = () => {
         </Link>
         <div
           className={`hidden mb-5 ${
-            showMenu ?"hidden": "mini:inline-block" 
+            showMenu ? "hidden" : "mini:inline-block"
           } items-center  absolute right-10`}>
           <HiOutlineMenuAlt4
             className="text-3xl absolute cursor-pointer"
             onClick={toggleMenu}
           />
         </div>
-        <div className={` mini:${showMenu ? "" : "hidden"} z-10`}>
+        <div className={` mini:${showMenu ? "hidden" : ""} z-10`}>
           <ul className="flex  items-center mini:flex-col mini:absolute mini:border bg-white mini:transition-all mini:duration-200 mini:ease-in-out rounded-lg right-10 mini:gap-2 gap-10">
             <li className="mini:border-b mini:px-10 mini:py-2">
               <Link to="/">Home</Link>
