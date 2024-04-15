@@ -5,9 +5,9 @@ import { useNavigate } from "react-router-dom";
 const RecipeCards = ({ recipeData, filteredData }) => {
   const navigate = useNavigate();
   let data;
-  if (filteredData.lenth === 0) {
+  if (filteredData.length === 0) {
     data = recipeData;
-    console.log("data",data)
+    console.log("data", data);
   } else {
     data = filteredData;
   }

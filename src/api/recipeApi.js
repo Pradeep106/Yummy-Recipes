@@ -1,12 +1,12 @@
 import api from "./api";
-import dotenv from "dotenv";
+// import dotenv from "dotenv";
 export const getRecipe = async (number = 20) => {
-  dotenv.config();
+  // dotenv.config();
   try {
     const response = await api.get("/random", {
       params: {
         number: number,
-        apiKey: process.env.apiKey,
+        apiKey: "c358bca78e964aa788a333d3ac61efd7",
       },
     });
     return response.data;

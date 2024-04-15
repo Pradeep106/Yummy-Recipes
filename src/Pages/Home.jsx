@@ -3,6 +3,7 @@ import RecipeCards from "../components/RecipeCards";
 import { RecipeContext } from "../context/RecipeContext";
 import { filterData } from "../helper/filterData";
 
+
 const Home = () => {
   const recipeData = useContext(RecipeContext);
   const [inputValue, setInputValue] = useState("");
@@ -30,7 +31,7 @@ const Home = () => {
     <div className="">
       <form
         onSubmit={handleSubmit}
-        className=" mt-20 box-center  gap-5 relative border-red-500">
+        className=" mt-20 box-center gap-5 relative border-red-500">
         <div className="w-[60%] relative">
           <input
             type="text"
@@ -59,7 +60,8 @@ const Home = () => {
         </button>
       </form>
       <h1 className="text-lg font-bold mt-10">Popular Picks</h1>
-      <RecipeCards filteredData={filteredData} />{" "}
+      {filterData &&<RecipeCards filteredData={filteredData} />}
+      {" "}
     </div>
   );
 };
