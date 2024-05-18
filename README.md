@@ -2,6 +2,8 @@
 
 ## YUMMY RECIPES
 
+[Live](https://master--yummy-recipe-food.netlify.app/)
+
 - Setup in local environmet
 - `cd client`
 - `npm i`
